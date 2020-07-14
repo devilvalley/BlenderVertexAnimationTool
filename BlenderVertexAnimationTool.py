@@ -103,9 +103,9 @@ class Vertex_Animation(Operator):
                 ob_eval = ob.evaluated_get(depsgraph)
                 me = ob_eval.to_mesh()
                 for a in range(WIDTH):
-                    red = me.vertices[a].normal.x
-                    green = me.vertices[a].normal.y * -1
-                    blue = me.vertices[a].normal.z
+                    red = (me.vertices[a].normal.x)*0.5 +0.5
+                    green = (me.vertices[a].normal.y * -1)*0.5 +0.5
+                    blue = (me.vertices[a].normal.z)*0.5 +0.5
                     alpha = 1.0
                     yield red, green, blue, alpha
                 ob_eval.to_mesh_clear()   
