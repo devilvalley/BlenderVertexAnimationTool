@@ -1,2 +1,2 @@
 # BlenderVertexAnimationTool
-bake vertex animation and normal 
+WIKI [工具使用说明](https://zhuanlan.zhihu.com/p/159042873)
