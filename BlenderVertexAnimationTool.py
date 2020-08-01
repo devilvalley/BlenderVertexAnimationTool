@@ -61,7 +61,7 @@ class Vertex_Animation(Operator):
      
         def generatePixels():
             for y in range(HEIGHT):
-                bpy.context.scene.frame_set(40-y)
+                bpy.context.scene.frame_set(WIDTH-y)
                 ob.update_from_editmode()
                 depsgraph = bpy.context.evaluated_depsgraph_get()
                 ob_eval = ob.evaluated_get(depsgraph)
@@ -96,7 +96,7 @@ class Vertex_Animation(Operator):
      
         def generatePixelsNormal():
             for y in range(HEIGHT):
-                bpy.context.scene.frame_set(40-y)
+                bpy.context.scene.frame_set(WIDTH-y)
                 #ob = bpy.context.object
                 ob.update_from_editmode()
                 depsgraph = bpy.context.evaluated_depsgraph_get()
